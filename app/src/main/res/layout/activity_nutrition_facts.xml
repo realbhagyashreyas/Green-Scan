@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/white">
+
+<TableLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+android:stretchColumns="1">
+
+<!-- Header Row -->
+<TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Nutrient"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#000000" /> <!-- Ensure text is visible -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Value"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+</TableRow>
+
+<!-- Rows for each nutrient -->
+<TableRow>
+    <TextView android:id="@+id/energy_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Energy (kcal)"
+        android:textColor="#000000" />
+
+    <TextView android:id="@+id/energy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="-"
+        android:textColor="#000000" />
+</TableRow>
+    <TableRow>
+        <TextView android:id="@+id/fat_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Fat (g)"
+            android:textColor="#000000"/>
+
+        <TextView android:id="@+id/fat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="-"
+            android:textColor="#000000"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:id="@+id/saturated_fat_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Saturated Fat (g)"
+            android:textColor="#000000"/>
+
+        <TextView android:id="@+id/saturated_fat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="-"
+            android:textColor="#000000"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:id="@+id/carbohydrates_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Carbohydrates (g)"
+            android:textColor="#000000"/>
+
+        <TextView android:id="@+id/carbohydrates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="-"
+            android:textColor="#000000"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:id="@+id/sugars_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Sugars (g)"
+            android:textColor="#000000"/>
+
+        <TextView android:id="@+id/sugars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="-"
+            android:textColor="#000000"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:id="@+id/fiber_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Fiber (g)"
+            android:textColor="#000000"/>
+
+        <TextView android:id="@+id/fiber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="-"
+            android:textColor="#000000"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:id="@+id/proteins_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Proteins (g)"
+            android:textColor="#000000"/>
+
+        <TextView android:id="@+id/proteins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="-"
+            android:textColor="#000000"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:id="@+id/salt_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Salt (g)"
+            android:textColor="#000000"/>
+
+        <TextView android:id="@+id/salt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="-"
+            android:textColor="#000000"/>
+    </TableRow>
+
+</TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
